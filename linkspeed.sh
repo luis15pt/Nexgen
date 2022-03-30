@@ -12,7 +12,7 @@ if (($Link8x < $Total ))
 then
 message info "Total GPUS found: "$Total
 message danger "GPUs at 4x speed: "$Link4x
-message file /tmp/Gpulist.txt payload
+message file List --file=/tmp/Gpulist.txt payload
 else
 message info "All at 8x Width"
 fi
