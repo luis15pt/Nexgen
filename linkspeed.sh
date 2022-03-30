@@ -9,7 +9,7 @@ echo "GPUs at 8x speed:" $Link8x
 
 if (($Link8x < $Total ))
 then
-message danger "GPUs at 4x speed: "$Link4x $GPU
+message danger "GPUs at 4x speed: "$Link4x$GPU
 echo "$GPU"
 else
 message info "All at 8x Width"$
