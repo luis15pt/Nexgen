@@ -5,7 +5,7 @@ Link8x=$(nvidia-info | grep "8x" -c)
 echo "GPUs at 4x speed:" $Link4x
 echo "GPUs at 8x speed:" $Link8x
 
-if ($Link8x < 6 )
+if (($Link8x < 6 ))
 then
 message danger "GPUs at 4x speed:"$Link4x
 else
