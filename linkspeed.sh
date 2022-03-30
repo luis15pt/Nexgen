@@ -6,9 +6,9 @@ Link8x=$(nvidia-info | grep "8x" -c)
 Link16x=$(nvidia-info | grep "16x" -c)
 
 LinkTotal=$(($Link1x + $Link4))
+echo $LinkTotal
 
 nvidia-smi -q | grep --color=never -A 2 -B 6 "Link Width" > /tmp/Gpulist.txt
-
 
 
 if (($Link8x < $Total ))
