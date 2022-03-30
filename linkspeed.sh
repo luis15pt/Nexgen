@@ -10,8 +10,9 @@ echo "GPUs at 8x speed:" $Link8x
 
 if (($Link8x < $Total ))
 then
+message info "Total GPUS found: "$Total
 message danger "GPUs at 4x speed: "$Link4x
-message file List /tmp/Gpulist.txt payload
+message file /tmp/Gpulist.txt payload
 else
-message info "All at 8x Width"$
+message info "All at 8x Width"
 fi
