@@ -8,7 +8,7 @@ echo "GPUs at 8x speed:" $Link8x
 
 if (($Link8x < $Total ))
 then
-message danger "GPUs at 4x speed: "$Link4x
+message danger "GPUs at 4x speed: "$Link4x $GPU
 GPU=$(nvidia-info | grep -B 1 "4x" | grep "GPU" | awk '{print $2,$3,$4}')
 echo "$GPU"
 else
