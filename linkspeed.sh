@@ -5,7 +5,7 @@ Link4x=$(nvidia-info | grep "4x" -c)
 Link8x=$(nvidia-info | grep "8x" -c)
 Link16x=$(nvidia-info | grep "16x" -c)
 
-LinkTotal=$(($Link1x + $Link4))
+LinkTotal=$(expr $Link1x + $Link4)
 echo $LinkTotal
 
 nvidia-smi -q | grep --color=never -A 2 -B 6 "Link Width" > /tmp/Gpulist.txt
