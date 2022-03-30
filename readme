@@ -1,3 +1,10 @@
+Works with HiveOS with nvidia-info
+
+Returns if any cards are working in 4x speed as a warning notification
+
+
+
+
 Instructions to pull and run file:
 
 cd /tmp/ && curl -O https://raw.githubusercontent.com/luis15pt/Nexgen/main/linkspeed.sh && chmod +x linkspeed.sh && ./linkspeed.sh
