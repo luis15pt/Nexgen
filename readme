@@ -1,0 +1,3 @@
+Instructions to pull and run file:
+
+cd /tmp/ && curl -O https://raw.githubusercontent.com/luis15pt/Nexgen/main/linkspeed.sh && chmod +x linkspeed.sh && ./linkspeed.sh
