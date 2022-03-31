@@ -1,6 +1,8 @@
 Works with HiveOS with nvidia-info
 
-Returns if any cards are working in 4x speed as a warning notification
+Returns as a dannger message in hiveOS if any cards are working in 1x or 4x speed. Also sends a file to the interface containing which ones are running at that speed.
+
+If all cards are at 8x will send a simple info message.
 
 
 
