@@ -12,7 +12,7 @@ echo $LinkTotal
 nvidia-smi -q | grep --color=never -A 2 -B 6 "Link Width" > /tmp/Gpulist.txt
 
 
-if (($Link8x < $Total )) || (($Link16x < $Total ))
+if (($Link8x < $Total ))
 then
 message info "Total GPUS found: "$Total
 message danger "GPUs with issues: "$LinkTotal
